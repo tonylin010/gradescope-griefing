@@ -4,7 +4,8 @@
 This is a diabolically insecure autograder. It stores the contents-to-be of [results.json](https://gradescope-autograders.readthedocs.io/en/latest/specs/) in a Python dictionary called `d` then uses `exec()` to evaluate Python code run from a file; effictively copy-pasting the code in lieu of the function call. Feel free to review the autograder code in [grade.py](grade.py).
 
 ## Constraints
-Submission should be valid Python code in a file `main.py`. Go crazy.
+- Submission should be valid Python code in a file `main.py`. Go crazy.
+- No console output unless above met
 
 ## Solution
 - [Grade change](change_grade/main.py) simply access `d["score"]` and change grades that way.
